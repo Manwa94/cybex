@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% block contactactive %} active{% endblock contactactive %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Job Details</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .section1 {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .section1 p {
+            color: #666;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section1 i {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                width: 100%;
+            }
+        }
+
+        .section1 p1 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">We’d love the chance to show you what we can do</div>
+                    <p>For a no-obligation discussion of your objectives,<br> please get in touch with us on: </p>
+                </div>
+                <div class="container">
+                    <div class="carousel-inner">
+                        <img src="/static/con1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="section1">
+                        <br>
+                        <p1>Contact Details</p1> <br><br>
+                        <img alt="logo" src="/static/crcl1.png" width="75px" /> <br>
+                        <p><i class="fas fa-envelope"></i>Email: info@cybextech.in</p> <br>
+                        <p><i class="fas fa-phone"></i>Phone: +91-8149169310 +91-7972117819</p> <br>
+                        <p><i class="fas fa-map-marker-alt"></i>Address: Office no 15 & 27,Audumbar complex
+                            B,<br>infront of fullham company,<br>Dhayari-narhe Road, Near Zeal College Chowk, <br>Narhe
+                            Gaon, Pune - 411041 </p>
+                        <!--Google map-->
+                        <div id="map-container-google-3" class="z-depth-1-half map-container-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.9671844074355!2d73.81077862310386!3d18.4397990298583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eab8bfb255af%3A0x3a55f3ae9ecaf87f!2sCYBEX%20TECHNOLOGY%20PUNE!5e0!3m2!1sen!2sin!4v1647186489514!5m2!1sen!2sin"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <style>
+                            .map-container-3 {
+                                overflow: hidden;
+                                padding-bottom: 56.25%;
+                                position: relative;
+                                height: 0;
+                            }
+
+                            .map-container-3 iframe {
+                                left: 0;
+                                top: 0;
+                                height: 70%;
+                                width: 70%;
+                                position: absolute;
+                            }
+                        </style>
+                    </div>
+                    <div class="section1">
+                        <br>
+                        <p1>Hiring</p1> <br><br><br>
+                        <p><b>"Attention all talented professionals!</p> </b> We are hiring! If you have a strong
+                        background in IT, exceptional skills, and a desire to work in a collaborative and challenging
+                        environment, we would like to talk to you. Take the next step in your career with us!"</p>
+                        <p><i class="fas fa-briefcase"></i>Position: Full Stack Developer</p> <br>
+                        <p><i class="fas fa-building"></i>Company: CYBEX</p> <br>
+                        <p><i class="fas fa-map-marker-alt"></i>Location: Narhe, Pune</p><a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=careers@cybextech.in&su=Your%20Subject&body=Your%20Message%20Here"
+                            target="_blank" class="btn btn-dark my-2" style="font-size: 12px;"> Send Mail </a><br>
+                        <a href="https://wa.me/7058907373" target="_blank" class="btn btn-info my-2 social-btn"
+                            style="font-size: 12px;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://m.facebook.com/profile.php/?id=100008035305467" target="_blank"
+                            class="btn btn-primary my-2 social-btn" style="font-size: 12px;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cybextechnologypune/?originalSubdomain=in" target="_blank"
+                            class="btn btn-info my-2 social-btn" style="font-size: 12px;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/cybexpune?lang=en" target="_blank"
+                            class="btn btn-info my-2 social-btn" style="font-size: 12px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+{% endblock body %}
